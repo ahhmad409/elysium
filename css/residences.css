@@ -1,0 +1,19 @@
+body {
+  background-color: #fff;
+}
+.page-heading {
+  margin: 150px 0 50px 0px;
+  color: #cf9312;
+  font-weight: normal;
+}
+.row {
+  row-gap: 2rem;
+}
+.card-img,
+.card-img-top {
+  aspect-ratio: 1/0.7;
+}
+
+.floor-plans-container img {
+  width: 100%;
+}

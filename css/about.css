@@ -1,0 +1,75 @@
+body {
+  background-color: #fff;
+}
+
+.page-heading {
+  margin: 150px 0 50px 0px;
+  color: #cf9312;
+  font-weight: normal;
+}
+
+.row img {
+  width: 100%;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 24px;
+}
+
+.projects-container ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.projects-container ul li {
+  font-size: 18px;
+}
+
+.modal-body img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+a:active,
+a:focus {
+  color: unset;
+}
+
+.col-md-3 {
+  overflow: hidden !important;
+}
+/* img {
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
+} */
+
+@media (min-width: 992px) {
+  .modal-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .modal-body img {
+    width: 50% !important;
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+}
+
+.modal-header {
+  padding: 1rem 1rem;
+  border: none !important;
+  background-color: #333;
+  color: #fff !important;
+}
+.modal-header h5 {
+  color: #fff;
+}
+.modal-header button span {
+  color: #fff !important;
+}

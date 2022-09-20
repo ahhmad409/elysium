@@ -1,0 +1,65 @@
+body {
+  background-color: #fff;
+}
+/* 
+.page-heading {
+  color: #cf9312;
+  font-weight: normal;
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    border-right: 5px solid #ccc;
+  }
+}
+
+.col-md-4 {
+  border-right: 5px solid #ccc;
+  border-top: 5px solid #ccc;
+  border-left: 5px solid #ccc;
+}
+
+.col-md-4 img {
+  margin-top: 50px !important;
+} */
+
+.margin-top-div {
+  margin: 200px 0 50px 0px;
+}
+
+.blogs-releases-events {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.blogs-releases-events h5 {
+  margin-bottom: 40px;
+  color: #fdbe33;
+}
+
+.blog,
+.event,
+.release {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.blog img,
+.event img,
+.release img {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 992px) {
+  .blogs-releases-events {
+    flex-direction: column;
+  }
+}
+
+.blogs-releases-events-container {
+  width: 95%;
+  max-width: 1766px;
+}
