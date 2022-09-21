@@ -94,3 +94,8 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5rem;
 }
+
+.fancybox img {
+  object-fit: cover;
+  aspect-ratio: 1/0.7;
+}

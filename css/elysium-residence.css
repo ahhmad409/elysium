@@ -1,0 +1,18 @@
+body {
+  background-color: #fff;
+}
+
+.types-container {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.page-heading {
+  margin: 150px 0 50px 0px;
+  color: #cf9312;
+  font-weight: normal;
+}
+
+h4 {
+  color: #666;
+}

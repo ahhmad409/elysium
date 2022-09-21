@@ -2323,7 +2323,7 @@ a:focus {
   height: 100vh;
   /* background-image: url("../img/banner3.jpg"); */
   background-image: url("../images/home/elysium-downtown.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 0px !important;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -12,8 +12,8 @@
       name="keywords"
       content="7 Canal, Quality living, world class living"
     />
+    <title>Elysium Residences</title>
 
-    <title>Elysium The Amenities</title>
     <!-- Favicon -->
     <link href="./images/favicon.png" rel="icon" />
 
@@ -40,12 +40,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/amenities.css" />
+    <link rel="stylesheet" href="./css/elysium-residence.css" />
   </head>
-
   <body>
     <div class="wrapper">
-      <!-- Nav Bar Start -->
+      <!-- Navbar -->
       <!-- prettier-ignore -->
       <div class="nav-bar nav-sticky">
         <div class="container-fluid">
@@ -72,7 +71,7 @@
                     <a href="#" class="dropdown-item downloadLink" data-toggle="modal" data-target="#exampleModalCenter">Floor Plans</a>
                   </div>
                 </div>
-                <a href="./layouts.html" class="nav-item nav-link hover-underline-animation">layouts</a>
+                <a href="#" class="nav-item nav-link active">layouts</a>
                 <a href="./our-projects.html" class="nav-item nav-link hover-underline-animation">Our Projects</a>
                 <a href="./cbd.html" class="nav-item nav-link hover-underline-animation">CBD</a>
                 <a href="./corporate-tower.html" class="nav-item nav-link hover-underline-animation">Corporate Tower</a>
@@ -82,8 +81,8 @@
                 <a href="./five-star-hotel.html" class="nav-item nav-link hover-underline-animation">5 Star Hotel</a>
                 <a href="./updates.html" class="nav-item nav-link hover-underline-animation">Updates</a>
                 <a href="./gallery.html" class="nav-item nav-link hover-underline-animation">Gallery</a>
-                <a href="#" class="nav-item nav-link active">Amenities</a>
-                <a href="./location.html" class="nav-item nav-link hover-underline-animation">Location</a>
+                <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Amenities</a>
+                <a href="./amenities.html" class="nav-item nav-link hover-underline-animation">Location</a>
                 <a href="./partners.html" class="nav-item nav-link hover-underline-animation">Our Partners</a>
                 <a href="./about.html" class="nav-item nav-link hover-underline-animation">About</a>
                 <a href="./contact.html" class="nav-item nav-link hover-underline-animation">Contact</a>
@@ -94,182 +93,88 @@
           </nav>
         </div>
       </div>
-      <!-- Nav Bar End -->
 
-      <!-- Modal Starts -->
+      <!-- MODAL STARTS -->
       <!-- prettier-ignore -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">
-                Please fill below form
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="inputName">Name</label>
-                  <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" required placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                  <label for="inputEmail">Email address</label>
-                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                  <label for="inputContact">Contact</label>
-                  <input type="text" class="form-control" id="inputContact" required placeholder="Contact">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
-              <a href="#" type="button" id="downloadBtn" class="btn btn-primary">Submit & Download </a>
-            </div>
+      <div class="modal fade form-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Please fill below form
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" required placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="inputContact">Contact</label>
+                <input type="text" class="form-control" id="inputContact" required placeholder="Contact">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+            <a href="#" type="button" id="downloadBtn" class="btn btn-primary">Submit & Download </a>
           </div>
         </div>
       </div>
-      <!-- Modal Ends -->
+    </div>
 
-      <h1 class="page-heading text-center">The Amenities</h1>
-      <div class="container-fluid amenities-container" data-aos="fade-up">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/capsule-lifts.jpg"
-            alt="High Speed Elevators"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">High Speed Elevators</p>
-          </div>
-        </div>
+      <!-- MODAL ENDS -->
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/swimming-pool.jpg"
-            alt="swimming pool"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Swimming Pools</p>
+      <h1 class="page-heading text-center" data-aos="fade-in">Residences</h1>
+      <!-- prettier-ignore -->
+      <div class="container types-container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <p class="text-center">(304 sq. ft.)</p> -->
+            <img src="./images/layouts/residence/TYPICAL FLOOR PLAN.png" alt="1 bed room apartment" width="100%"/>
           </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/leisure-lounge.jpg"
-            alt="leisure lounge"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Leisure Lounge</p>
+          <div class="col-md-12">
+            <!-- <p class="text-center">(304 sq. ft.)</p> -->
+            <img src="./images/layouts/residence/EXECUTIVE FLOOR PLAN.png" alt="1 bed room apartment" width="100%" />
           </div>
-        </div>
+        </div>  
+      </div>
 
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/cafe.jpg"
-            alt="cafe"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Cafe</p>
+      <!-- prettier-ignore -->
+      <div class="container">
+            <div class="row mt-5">
+          <div class="col-md-6 mt-5">
+            <h4 class="text-center">1 Bed Classic</h4>
+            <img src="./images/layouts/residence/1bed-Classic.jpg" alt="1 bed room apartment" width="100%" />
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/day-care.jpg"
-            alt="day care"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Day Care</p>
+          <div class="col-md-6 mt-5">
+            <h4 class="text-center">1 Bed Supreme</h4>
+            <img src="./images/layouts/residence/1bed-Supreme.jpg" alt="1 bed room apartment" width="100%" />
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/gym.png"
-            alt="gym"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Gym</p>
+          <div class="col-md-6 mt-5">
+            <h4 class="text-center">2 Bed</h4>
+            <img src="./images/layouts/residence/2bed.jpg" alt="1 bed room apartment" width="100%" />
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/spa.jpg"
-            alt="spa"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">The Spa</p>
+          <div class="col-md-6 mt-5">
+            <h4 class="text-center">2 Bed Corner</h4>
+            <img src="./images/layouts/residence/2bed-Corner.jpg" alt="1 bed room apartment" width="100%" />
           </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/steam-and-sauna.jpg"
-            alt="steam room and sauna"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Steam & Sauna</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/undergroind-car-parking.jpg"
-            alt="hassle free multi-level Underground car parking"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">
-              Hassle Free Multi-Level Underground Car Parking
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/laundary-services.jpg"
-            alt="laundary services"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Laundary Services</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/reception-amenities.jpg"
-            alt="Reception"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">Reception</p>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="./images/amenities/24-hour-power-backup.jpeg"
-            alt="24 Hours Power Backup"
-          />
-          <div class="card-body">
-            <p class="card-text text-center">24 Hours Power Backup</p>
+          <div class="col-md-6 mt-5">
+            <h4 class="text-center">3 Bed Royal</h4>
+            <img src="./images/layouts/residence/3bed-Royal.jpg" alt="1 bed room apartment" width="100%" />
           </div>
         </div>
       </div>
 
-      <!-- Footer Start -->
+      <!-- FOOOTER Start -->
       <!-- prettier-ignore -->
       <div class="footer" data-aos="fade-in">
         <div class="container">
@@ -337,22 +242,21 @@
           </div>
         </div>
       </div>
-      <!-- Footer End -->
-
+      <!-- footer ends -->
       <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       AOS.init({
-        offset: 200,
+        offset: 120,
         duration: 700,
       });
     </script>
