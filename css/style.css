@@ -2704,6 +2704,8 @@ textarea {
 
 @media (max-width: 992px) {
   .onyx-logo {
-    display: none;
+    position: absolute;
+    top: 20px;
+    left: 45%;
   }
 }
