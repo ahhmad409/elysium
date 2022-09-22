@@ -99,3 +99,12 @@ body {
   object-fit: cover;
   aspect-ratio: 1/0.7;
 }
+
+.types-container img {
+  width: 100%;
+}
+
+.types-container .col-md-6 {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}

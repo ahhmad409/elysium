@@ -2,7 +2,7 @@ body {
   background-color: #fff;
 }
 
-.types-container {
+.types-container-first {
   width: 100%;
   max-width: 1920px;
 }
@@ -15,4 +15,26 @@ body {
 
 h4 {
   color: #666;
+}
+
+.types-container-second {
+  overflow: hidden;
+}
+
+.types-container-second img {
+  width: 100%;
+}
+
+.types-container-second .col-md-6 {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}
+
+.types-container-second img {
+  transition: transform 0.5s;
+}
+
+.types-container-second img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }

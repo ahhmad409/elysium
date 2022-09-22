@@ -1,0 +1,6 @@
+@media (max-width: 600px) and (max-height: 700px) {
+  .overlay-text {
+    width: 85%;
+    font-size: 30px;
+  }
+}
