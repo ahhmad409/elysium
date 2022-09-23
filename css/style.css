@@ -2488,7 +2488,8 @@ iframe {
 
 .navbar-brand,
 .navbar-brand-desktop {
-  width: 95px;
+  /* width: 95px; */
+  width: 150px;
 }
 
 .book_now_wrapper,
@@ -2706,6 +2707,38 @@ textarea {
   .onyx-logo {
     position: absolute;
     top: 20px;
-    left: 45%;
+    left: 50%;
+  }
+}
+
+.about-homepage .cbd2-image {
+  width: 100%;
+}
+
+.about-homepage .four-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-homepage .four-images img {
+  width: 100%;
+  max-width: 250px;
+  flex-grow: 1;
+}
+
+.homepage-main-image-two {
+  width: 100%;
+  aspect-ratio: 1/0.7;
+  object-fit: contain;
+}
+
+@media (max-height: 700px) {
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link.active {
+    padding: 0px 10px 5px 10px;
   }
 }
