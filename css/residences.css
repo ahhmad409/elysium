@@ -17,3 +17,8 @@ body {
 .floor-plans-container img {
   width: 100%;
 }
+
+.categories-text {
+  color: #cf9312;
+  margin-bottom: 50px;
+}

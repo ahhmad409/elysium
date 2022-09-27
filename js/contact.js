@@ -29,15 +29,15 @@ function checkInputs() {
     confirmButtonText: "OK",
   });
 
-  // const body = {
-  //   name: personName.value,
-  //   email: personEmail.value,
-  //   message: personMessage.value,
-  // };
+  const body = {
+    name: personName.value,
+    email: personEmail.value,
+    message: personMessage.value,
+  };
 
-  // axios.post("http://localhost:5501", body).then((response) => {
-  //   console.log(response.data.data);
-  // });
+  axios.post("http://localhost:5501", body).then((response) => {
+    console.log(response.data.data);
+  });
 
   personName.value = "";
   personEmail.value = "";
